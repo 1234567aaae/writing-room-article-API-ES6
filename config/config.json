@@ -1,0 +1,33 @@
+{
+    "development": {
+      "username": "root",
+      "password": "",
+      "database": "writing_room_db",
+      "host": "localhost",
+      "dialect": "mysql",
+      "operatorsAliases": false,
+      "define": {
+        "timestamps": true
+      }
+    },
+    "test": {
+      "username": "root",
+      "password": "",
+      "database": "writing_room_db_test",
+      "host": "localhost",
+      "dialect": "mysql",
+      "operatorsAliases": false,
+      "define": {
+        "timestamps": true
+      }
+    },
+    "production": {
+      "use_env_variable": "DATABASE_URL",
+      "dialect": "postgres",
+      "operatorsAliases": false,
+      "define": {
+        "timestamps": true
+      }
+    }
+  }
+  
