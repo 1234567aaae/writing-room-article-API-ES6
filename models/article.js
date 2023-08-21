@@ -1,6 +1,6 @@
 
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+import { DataType } from 'sequelize';
+import Sequelize from '../config/database';
 
 const Article = sequelize.define('Article', {
   title: {
@@ -12,5 +12,4 @@ const Article = sequelize.define('Article', {
     allowNull: false,
   },
 });
-
-module.exports = Article;
+export default Article;

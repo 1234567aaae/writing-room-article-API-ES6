@@ -1,7 +1,7 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const articleController = require('../controllers/articleController');
-const authMiddleware = require('../middleware/authMiddleware');
+import articleController from '../controllers/articleController';
+import authMiddleware from '../middleware/authMiddleware';
 
 // Require authentication middleware
 router.use(authMiddleware);
@@ -9,5 +9,4 @@ router.use(authMiddleware);
 router.post('/create', articleController.createArticle);
 router.get('/all', articleController.getAllArticles);
 router.get('/:articleId', articleController.getArticleById);
-
-module.exports = router;
+export default router;

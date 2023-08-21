@@ -1,4 +1,5 @@
-const Article = require('../models/article');
+
+import Article from '../models/article';
 
 exports.createArticle = async (req, res) => {
   try {

@@ -1,5 +1,6 @@
-const User = require('../models/user');
-const jwt = require('jsonwebtoken');
+
+import User from '../models/user';
+import { Jwt } from 'jsonwebtoken';
 
 exports.register = async (req, res) => {
   try {

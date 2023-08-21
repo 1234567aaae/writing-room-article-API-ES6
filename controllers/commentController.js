@@ -1,5 +1,4 @@
-const Comment = require('../models/comment');
-
+import Comment from '../models/comment';
 exports.createComment = async (req, res) => {
   try {
     const { content, articleId } = req.body;
